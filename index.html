@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>loginpage</title>
+  </head>
+  <body>
+    <section>
+      <div class="btn-cont">
+        <ion-icon name="people"></ion-icon>
+        <h1>WELCOME TO WEBSITE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur elit. At, accusantium totam
+          quibusdam autem
+        </p>
+        <p>Lorem ipsum dolor sit amet consect Repellatsuscipit.</p>
+
+        <div class="btn-box">
+          <button class="btn1" onclick="openlogin()">Log in</button>
+
+          <button class="btn1" onclick="opensignin()">Sign Up</button>
+        </div>
+      </div>
+      <!-- <div class="login-box"> -->
+
+      <div class="login-cont animation">
+        <ion-icon
+          name="close-outline"
+          class="closebutton"
+          onclick="closelogin()"
+        ></ion-icon>
+
+        <form action="">
+          <div class="login-head">
+            <h2>LOGIN</h2>
+          </div>
+          <div class="input-cont">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" required maxlength="25"/>
+            <label for="">Email</label>
+          </div>
+          <div class="input-cont">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="text" required maxlength="25"/>
+            <label for="">password</label>
+          </div>
+          <div class="remember">
+            <label for=""
+              ><input type="checkbox" />Remember Me
+              <a href="#">Forget Password</a></label
+            >
+          </div>
+          <div class="btn">
+            <button>Log in</button>
+          </div>
+          <div class="register">
+            <p>Don't have a account <a href="#" onclick="opensignin()">Sign Up</a></p>
+          </div>
+        </form>
+      </div>
+      <div class="signup-cont animation">
+        <ion-icon
+          name="close-outline"
+          class="closebutton"
+          onclick="closelogin()"
+        ></ion-icon>
+
+        <form action="">
+          <div class="login-head">
+            <h2>Sign Up</h2>
+          </div>
+          <div class="input-cont">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" required maxlength="25"/>
+            <label for="">User name</label>
+          </div>
+          <div class="input-cont">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" required maxlength="25" />
+            <label for="">Email ID</label>
+          </div>
+          
+          <div class="btn">
+            <button>Sign Up</button>
+          </div>
+          <div class="register">
+            <p>Sign Up using below Accounts</p>
+          </div>
+          <div class="acc-logo">
+            <ion-icon name="logo-google"></ion-icon>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

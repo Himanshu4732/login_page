@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+@keyframes zoomanimation {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+  .btn-cont{
+display: flex;
+flex-direction: column;
+width: 50vw;
+justify-content: center;
+align-items: center;
+transition: 0.6s;
+  }
+
+  .btn-cont ion-icon,h1{
+    color: white;
+    font-size: 7vh;
+    padding-bottom: 10px;
+    
+  }
+
+  .btn-cont p{
+font-size: 1vw;
+padding-bottom: 10px;
+color: white;
+  }
+
+  .btn-box button{
+    margin:30px 30px ;
+  }
+
+  .btn-box button:focus{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+  }
+
+.btn1{
+   width: 10vw;
+   
+   border-radius: 20px;
+   
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('../img/background.jpg')no-repeat;
+    /* opacity: 0.8; */
+    background-position: center;
+    background-size: cover;
+}
+.login-cont,.signup-cont{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 400px;
+    height: 450px;
+    background:#ffffff21;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.animation{
+    animation: zoomanimation 0.6s;
+
+}
+
+.closebutton{
+    color: #ffffffdf;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor:pointer;
+    display: block;
+   
+}
+
+.closebutton:hover{
+    color: red;
+    transform: scale(1.2);
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+}
+.input-cont{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.input-cont label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+
+
+.input-cont input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.input-cont ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+   
+}
+.remember{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+.remember label input{
+    margin-right: 3px;
+
+}
+.remember label a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 50px;
+}
+.remember label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+   
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+.acc-logo{
+    color: white;
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
